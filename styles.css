@@ -1,0 +1,102 @@
+/* Grundlegendes */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Hauptinhalt */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+/* Überschriften */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 35px;
+    color: #111827;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #374151;
+}
+
+/* Download-Link */
+.link {
+    background: white;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 35px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+.link a {
+    color: #007aff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Tutorial-Bilder */
+img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+
+    margin: 25px auto;
+
+    border-radius: 14px;
+    background: white;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* Auf kleinen Bildschirmen */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 14px 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .link {
+        padding: 15px 18px;
+    }
+
+    img {
+        margin: 18px auto;
+        border-radius: 10px;
+    }
+}
